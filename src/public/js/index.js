@@ -159,12 +159,15 @@ head.controller("searchlist",["$scope","$rootScope","$http",function($scope,$roo
 head.controller("endlist",["$scope","$rootScope","$http",function($scope,$rootScope,$http){
 	$http.get("./public/json/mxdp.json").success(function(data){
 		console.log(data);
+		var list = [];
 		for (var i in data)
 		{
 			if (data[i]["name"].indexOf($rootScope.inVal)!=-1)
 			{
-				$scope.endlist=data[i];
+				list.push(data[i]);
 			}
 		}
+		console.log(list);
+        $scope.endlist = list;
 	});
 }]);

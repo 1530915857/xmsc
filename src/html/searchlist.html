@@ -1,13 +1,13 @@
 <ul id="searchlist" ng-controller="endlist">
 	<li ng-repeat="item in endlist">
-		<div class="goodslist" ng-click="getId(endlist.id)">
+		<div class="goodslist" ng-click="getId(item.id)">
 			<div class="left">
-				<img ng-src="{{endlist.img}}"/>
+				<img ng-src="{{item.img}}"/>
 			</div>
 			<div class="right">
-				<p class="name">{{endlist.name}}</p>
-				<p class="remark">{{endlist.remark}}</p>
-				<p class="price">{{endlist.price}}</p>
+				<p class="name">{{item.name}}</p>
+				<p class="remark">{{item.remark}}</p>
+				<p class="price">{{item.price}}</p>
 			</div>
 		</div>
 	</li>
