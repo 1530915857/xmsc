@@ -1,0 +1,568 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 100px;
+}
+#head {
+  width: 100%;
+  height: 6vh;
+  font-size: 0.1rem;
+  position: relative;
+  z-index: 2;
+}
+#head span {
+  float: left;
+  display: block;
+  position: relative;
+  top: 1vh;
+}
+#head #hleft {
+  width: 15%;
+  height: 4vh;
+}
+#head #hleft img {
+  width: 70%;
+  vertical-align: middle;
+  margin-left: 2vw;
+}
+#head .iconfont {
+  text-align: center;
+  line-height: 4vh;
+  font-size: 0.3rem;
+}
+#head #back {
+  width: 15%;
+  height: 4vh;
+  position: absolute;
+  top: 1vh;
+  left: 0;
+}
+#head #searhead {
+  width: 100%;
+  height: 6vh;
+  background: gainsboro;
+}
+#head #searhead li {
+  float: left;
+  position: relative;
+  top: 1vh;
+}
+#head #searhead .iconfont {
+  text-align: center;
+  line-height: 4vh;
+  color: grey;
+}
+#head #searhead #homepage {
+  width: 15%;
+  height: 4vh;
+}
+#head #searhead #search {
+  width: 15%;
+  height: 4vh;
+}
+#head #searhead #seaval {
+  width: 70%;
+  height: 4vh;
+}
+#head #searhead #seaval input {
+  width: 100%;
+  height: 4vh;
+  outline: none;
+  border: none;
+  padding-left: 2vw;
+}
+#head #endlisthead {
+  width: 100%;
+  height: 6vh;
+  background: gainsboro;
+}
+#head #endlisthead li {
+  float: left;
+  position: relative;
+  top: 1vh;
+  text-align: center;
+  line-height: 4vh;
+  font-size: 0.2rem;
+}
+#head #endlisthead .iconfont {
+  text-align: center;
+  line-height: 4vh;
+  color: grey;
+}
+#head #endlisthead #endlistback {
+  width: 15%;
+  height: 4vh;
+}
+#head #endlisthead #endlisttitle {
+  width: 70%;
+  height: 4vh;
+}
+#head #endlisthead #searchbtn {
+  width: 15%;
+  height: 4vh;
+}
+#head #hcenter {
+  width: 70%;
+  height: 4vh;
+}
+#head #hcenter input {
+  width: 90%;
+  height: 4vh;
+  background: url(../img/fdj-logo.png);
+  background-size: 100%;
+  outline: none;
+  border: none;
+  padding-left: 8vw;
+}
+#head #hright {
+  width: 15%;
+  height: 4vh;
+  text-align: center;
+  line-height: 4vh;
+  font-size: 0.2rem;
+  color: white;
+}
+#head #share {
+  width: 15%;
+  height: 4vh;
+  position: absolute;
+  top: 1vh;
+  right: 0;
+}
+section {
+  width: 100%;
+  height: 92vh;
+  overflow: hidden;
+  overflow-y: scroll;
+  position: absolute;
+  top: 0;
+}
+section .swiper-container {
+  width: 100%;
+  height: auto;
+}
+section .swiper-container .swiper-wrapper {
+  width: 100%;
+  height: auto;
+}
+section .swiper-container .swiper-wrapper .swiper-slide {
+  width: 100%;
+  height: auto;
+}
+section .swiper-container .swiper-wrapper .swiper-slide img {
+  width: 100%;
+}
+section #report {
+  width: 100%;
+  height: 6vh;
+  background: aliceblue;
+  position: relative;
+  top: -3vh;
+  z-index: 2;
+}
+section #report #sczblogo {
+  width: 30%;
+  height: 6vh;
+  position: relative;
+}
+section #report #sczblogo img {
+  width: 100%;
+  height: 6vh;
+  position: absolute;
+  top: 0;
+}
+section #report #sczblogo::after {
+  content: "";
+  width: 2px;
+  height: 4vh;
+  background: gray;
+  position: absolute;
+  right: 5px;
+  top: 1vh;
+}
+section #report #news {
+  width: 70%;
+  height: 6vh;
+  display: inline;
+  line-height: 6vh;
+  font-size: 0.15rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+section #goods0 {
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: -2vh;
+  background: cornflowerblue;
+}
+section #goods0 #goodsl {
+  width: 49%;
+  height: auto;
+  float: left;
+}
+section #goods0 #goodsl img {
+  width: 100%;
+}
+section #goods0 #goodsr {
+  width: 49%;
+  height: auto;
+  float: right;
+  margin-left: 2%;
+}
+section #goods0 #goodsr img {
+  width: 100%;
+}
+section #goods0 #goodsr .rdown {
+  margin-top: -12%;
+}
+section #goods1 {
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: -5vh;
+}
+section #goods1 img {
+  width: 100%;
+}
+section #goods2 {
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: -7vh;
+}
+section #goods2 .mxdp {
+  width: 100%;
+  height: auto;
+}
+section #goods2 .mxdp img {
+  width: 100%;
+}
+section #goods2 ul {
+  width: 100%;
+  height: auto;
+  margin-top: -3vh;
+}
+section #goods2 ul li {
+  width: 50%;
+  height: auto;
+  float: left;
+  position: relative;
+  margin-bottom: 1vh;
+}
+section #goods2 ul li img {
+  width: 100%;
+}
+section #goods2 ul li span {
+  width: 15vw;
+  position: absolute;
+  top: -30%;
+  left: 0;
+}
+section #goods2 ul li span img {
+  width: 100%;
+}
+section #goods2 ul li p {
+  padding-left: 3vw;
+}
+section #goods2 ul li .name {
+  font-size: 0.14rem;
+  margin-top: -3vh;
+}
+section #goods2 ul li .remark {
+  font-size: 0.06rem;
+}
+section #goods2 ul li .price {
+  font-size: 0.15rem;
+  color: #ff6000;
+}
+section #goods2 #greenmonth {
+  width: 100%;
+  height: auto;
+}
+section #goods2 #greenmonth img {
+  width: 100%;
+}
+section #goodinfor {
+  width: 100%;
+  height: 14vh;
+  margin-top: -2vh;
+}
+section #goodinfor p {
+  margin-left: 0.125rem;
+}
+section #goodinfor .name {
+  font-size: 0.18rem;
+  line-height: 5vh;
+}
+section #goodinfor .remark {
+  font-size: 0.15rem;
+  color: rgba(0, 0, 0, 0.54);
+  line-height: 3vh;
+}
+section #goodinfor .price {
+  font-size: 0.24rem;
+  color: #f56600;
+  line-height: 6vh;
+  position: relative;
+}
+section #goodinfor .price::after {
+  content: "";
+  width: 94vw;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.14);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+section #selected {
+  width: 100%;
+  padding-left: 3vw;
+  position: relative;
+  top: -7vh;
+}
+section #selected span {
+  font-size: 0.15rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+section #selected p {
+  font-size: 0.18rem;
+  color: #000000;
+  margin-top: -2vh;
+}
+section #selected .icon-youjiantou {
+  position: absolute;
+  right: 10%;
+  top: 70%;
+}
+section #selected::after {
+  content: "";
+  width: 100%;
+  height: 0.1rem;
+  background: gainsboro;
+  position: absolute;
+  bottom: -3vh;
+  left: -2vw;
+}
+section #address {
+  width: 100%;
+  height: 5vh;
+  line-height: 5vh;
+  font-size: 0.2rem;
+  position: relative;
+  top: -3vh;
+}
+section #address .icon-dizhi {
+  margin-left: 2vw;
+}
+section #address .icon-youjiantou {
+  position: absolute;
+  right: 7%;
+}
+section #address::after {
+  content: "";
+  width: 100%;
+  height: 0.1rem;
+  background: gainsboro;
+  position: absolute;
+  bottom: -3vh;
+  left: 0;
+}
+section #selectpart {
+  width: 100%;
+  font-size: 0.2rem;
+  position: relative;
+  top: 2vh;
+}
+section #selectpart span {
+  margin-left: 2vw;
+  color: gray;
+}
+section #selectpart p {
+  margin-left: 2vw;
+}
+section #selectpart .icon-youjiantou {
+  position: absolute;
+  top: 35%;
+  right: 7%;
+}
+section #selectpart::after {
+  content: "";
+  width: 100%;
+  height: 0.1rem;
+  background: gainsboro;
+  position: absolute;
+  bottom: -3vh;
+  left: 0;
+}
+section #goodsphoto {
+  width: 100%;
+  margin-top: 6vh;
+}
+section #goodsphoto .infor {
+  width: 100%;
+  height: 6vh;
+  border-bottom: 1px solid gainsboro;
+}
+section #goodsphoto .infor li {
+  width: 50%;
+  float: left;
+  text-align: center;
+  line-height: 6vh;
+  font-size: 0.17rem;
+  position: relative;
+}
+section #goodsphoto .infor .split {
+  color: orange;
+}
+section #goodsphoto .infor .split::after {
+  content: "";
+  width: 1px;
+  height: 4vh;
+  background: gray;
+  position: absolute;
+  right: 0;
+  top: 1vh;
+}
+section #goodsphoto p {
+  width: 100%;
+  padding-top: 5vh;
+  color: orange;
+  font-size: 0.2rem;
+  text-align: center;
+  margin-bottom: 3vh;
+}
+section #goodsphoto .bigphoto {
+  width: 100%;
+}
+section #goodsphoto .bigphoto li {
+  width: 100%;
+}
+section #goodsphoto .bigphoto li img {
+  width: 100%;
+}
+section #hotsea {
+  width: 100%;
+  height: 3rem;
+  font-size: 0.16rem;
+}
+section #hotsea p {
+  margin-top: 6vh;
+  line-height: 6vh;
+  padding-left: 2vw;
+}
+section #hotsea img {
+  width: 100%;
+}
+section #hotsea ul {
+  width: 100%;
+  height: auto;
+  margin-top: 1.5vh;
+}
+section #hotsea ul li {
+  width: auto;
+  height: auto;
+  padding: 2vw;
+  border: 1px solid fuchsia;
+  float: left;
+  margin-left: 2vw;
+  color: rgba(0, 0, 0, 0.7);
+  background: rgba(249, 234, 234, 0.5);
+}
+section #searchlist {
+  width: 100%;
+  margin-top: 6vh;
+}
+section #searchlist li {
+  width: 100%;
+  height: 1.8rem;
+}
+section #searchlist li .goodslist {
+  width: 100%;
+  position: relative;
+}
+section #searchlist li .goodslist .left {
+  width: 45%;
+  float: left;
+  position: absolute;
+  left: 0;
+}
+section #searchlist li .goodslist .left img {
+  width: 100%;
+}
+section #searchlist li .goodslist .right {
+  width: 55%;
+  float: right;
+  position: absolute;
+  left: 45%;
+}
+section #searchlist li .goodslist .right p {
+  margin-left: 2vw;
+}
+section #searchlist li .goodslist .right .name {
+  line-height: 6vh;
+  font-size: 0.18rem;
+  margin-top: 4vh;
+}
+section #searchlist li .goodslist .right .remark {
+  line-height: 3vh;
+  font-size: 0.12rem;
+}
+section #searchlist li .goodslist .right .price {
+  line-height: 6vh;
+  font-size: 0.16rem;
+  color: orange;
+}
+#foot {
+  width: 100%;
+  height: 8vh;
+  position: absolute;
+  bottom: 0;
+}
+#foot .indexfoot {
+  width: 100vw;
+  height: 8vh;
+}
+#foot .indexfoot li {
+  width: 25vw;
+  height: 8vh;
+  float: left;
+  font-size: 0.2rem;
+  text-align: center;
+  line-height: 4vh;
+}
+#foot .detailsfoot {
+  width: 100%;
+  height: 8vh;
+}
+#foot .detailsfoot .detailsfoot1 {
+  width: 20%;
+  height: 8vh;
+  float: left;
+  font-size: 0.2rem;
+  text-align: center;
+  line-height: 4vh;
+}
+#foot .detailsfoot .detailsfoot2 {
+  width: 30%;
+  height: 8vh;
+  float: left;
+  text-align: center;
+  line-height: 8vh;
+  font-size: 0.15rem;
+  color: white;
+  font-weight: bold;
+}
+#foot .detailsfoot .addcar {
+  background: #f90;
+}
+#foot .detailsfoot .atoncebuy {
+  background: #f95b07;
+}

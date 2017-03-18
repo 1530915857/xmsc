@@ -1,0 +1,56 @@
+<header id="head" ng-if="page.hashead">
+	<span id="hleft" ng-if="page.left"><img src="./public/img/xiaomilogo.png"/></span>
+	<span id="back" class="iconfont icon-fanhui" ng-if="page.back" ng-click="page.hback()"></span>
+	<span id="hcenter" ng-if="page.center">
+		<input type="text" placeholder="搜索商品名称" ng-focus="page.goPage('search')"/>
+	</span>
+	<span id="hright" ng-if="page.right">登录</span>
+	<span id="share" class="iconfont icon-share6" ng-if="page.share"></span>
+	<ul id="searhead" ng-if="page.search">
+		<li id="homepage" ng-click="page.goPage('mainlist')" class="iconfont icon-zhuye"></li>
+		<li id="seaval"><input type="text" ng-model="page.getSeval"/></li>
+		<li id="search" class="iconfont icon-fangdajing" ng-click="page.getval()"></li>
+	</ul>
+	<ul id="endlisthead" ng-if="page.searchlist">
+		<li id="endlistback" ng-click="page.goPage('search')" class="iconfont icon-icon"></li>
+		<li id="endlisttitle" >{{page.ending}}</li>
+		<li id="searchbtn" ng-click="page.goPage('search')" class="iconfont icon-fangdajing"></li>
+	</ul>
+</header>
+<section ui-view></section>
+<footer id="foot" ng-if="page.hasfoot">
+	<ul class="indexfoot" ng-if="page.indexfoot">
+		<li ng-click="page.goPage('mainlist')">
+			<span class="iconfont icon-shouye-shouye"></span>
+			<p>首页</p>
+		</li>
+		<li ng-click="page.goPage('classify')">
+			<span class="iconfont icon-sort"></span>
+			<p>分类</p>
+		</li>
+		<li ng-click="page.goPage('shopcar')">
+			<span class="iconfont icon-gouwuche"></span>
+			<p>购物车</p>
+		</li>
+		<li ng-click="page.goPage('mypage')">
+			<span class="iconfont icon-wode"></span>
+			<p>我的</p>
+		</li>
+	</ul>
+	<ul class="detailsfoot" ng-if="page.detailsfoot">
+		<li class="detailsfoot1" ng-click="page.goPage('mainlist')">
+			<span class="iconfont icon-shouye-shouye"></span>
+			<p>首页</p>
+		</li>
+		<li class="detailsfoot1">
+			<span class="iconfont icon-gouwuche"></span>
+			<p>购物车</p>
+		</li>
+		<li class="detailsfoot2 addcar">
+			<p>加入购物车</p>
+		</li>
+		<li class="detailsfoot2 atoncebuy">
+			<p>立即购物</p>
+		</li>
+	</ul>
+</footer>

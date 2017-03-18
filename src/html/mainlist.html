@@ -1,0 +1,39 @@
+<!--首页轮播图-->
+<div class="swiper-container">
+	<div class="swiper-wrapper" ng-controller="roll">
+		<div class='swiper-slide' ng-repeat="item in roll" ng-click="getId(item.id)">
+			<a href="javascript:;"><img ng-src="{{item.img}}"/></a>
+		</div>
+	</div>
+	<div class="swiper-pagination"></div>
+</div>
+<!--商城早报-->
+<div id="report">
+	<div id="sczblogo"><img src="./public/img/sczb.png"/></div>
+	<div id="news">小米加速国际化，正式进军越南市场</div>
+</div>
+<!--产品分类1-->
+<div id="goods0">
+	<div id="goodsl"><img src="./public/img/xiaomi5szzpg.jpg"/></div>
+	<div id="goodsr">
+		<div class="classifly rup"><img src="./public/img/zncpzc.webp"/></div>
+		<div class="classifly rdown"><img src="./public/img/xmds3s.webp"/></div>
+	</div>
+</div>
+<div id="goods1">
+	<img src="./public/img/hmgmsj.webp"/>
+</div>
+<!--明星单品-->
+<div id="goods2">
+	<div class="mxdp"><img src="./public/img/xiaomibenjibenair.jpg"/></div>
+	<ul ng-controller='mxdp'>
+		<li ng-repeat="item in mxdp">
+			<img ng-src="{{item.img}}"/>
+			<span><img ng-src="{{item.bj}}" alt="" /></span>
+			<p class="name">{{item.name}}</p>
+			<p class="remark">{{item.remark}}</p>
+			<p class="price">{{item.price}}</p>
+		</li>
+	</ul>
+	<div id="greenmonth"><img src="./public/img/xmlsfwy.webp"/></div>
+</div>

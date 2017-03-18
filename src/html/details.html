@@ -1,0 +1,39 @@
+<!--商品详情轮播图-->
+<div class="swiper-container">
+	<div class="swiper-wrapper">
+		<div class="swiper-slide" ng-repeat="item in list">
+			<img ng-src="{{item}}"/>
+		</div>
+	</div>
+	<div class="swiper-pagination"></div>
+</div>
+<div id="goodinfor">
+	<p class="name">{{LIST.title}}</p>
+	<p class="remark">{{LIST.remark}}</p>
+	<p class="price">{{LIST.price}}</p>
+</div>
+<div id="selected">
+	<span>已选</span>
+	<p class="hasselect">{{LIST.title}}*1</p>
+	<span class="iconfont icon-youjiantou"></span>
+</div>
+<div id="address">
+	<span class="iconfont icon-dizhi"></span>请选择配送地址<span class="iconfont icon-youjiantou"></span>
+</div>
+<div id="selectpart">
+	<span>选购配件</span>
+	<p>保护壳、贴膜、耳机、移动电源</p>
+	<span class="iconfont icon-youjiantou"></span>
+</div>
+<div id="goodsphoto">
+	<ul class="infor">
+		<li class="split">商品详情</li>
+		<li>参数</li>
+	</ul>
+	<p ng-click="page.showBigphone()" ng-if="page.show">查看全部图文详情></p>
+	<ul class="bigphoto" ng-if="page.bigPhone">
+		<li ng-repeat="item in detailphot">
+			<img ng-src="{{item}}"/>
+		</li>
+	</ul>
+</div>

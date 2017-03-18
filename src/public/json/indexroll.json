@@ -1,0 +1,54 @@
+[
+   {
+    "id":"01",
+    "img":"./public/img/xiaomi5s.jpg",
+    "title":"小米5s 3GB+64GB 哑光金色",
+    "price":"￥1999",
+    "remark":"“暗夜之眼”超感光相机 / 无孔式超声波指纹识别 / 骁龙 821 旗舰处理器 / 全金属一体化机身",
+    "roll":[
+    "./public/img/xiaomi5sroll1.webp"
+    ],
+    "detailphoto":[
+    "./public/img/xiaomi5s1.webp",
+    "./public/img/xiaomi5s2.webp",
+    "./public/img/xiaomi5s3.webp",
+    "./public/img/xiaomi5s4.webp",
+    "./public/img/xiaomi5s5.webp",
+    "./public/img/xiaomi5s6.webp",
+    "./public/img/xiaomi5s7.webp",
+    "./public/img/xiaomi5s8.webp",
+    "./public/img/xiaomi5s9.webp",
+    "./public/img/xiaomi5s10.webp"
+    ]
+   },
+   {
+    "id":"02",
+    "img":"./public/img/hongminote4.jpg",
+    "title":"红米Note 4+4GB 幽蓝",
+    "price":"￥1399",
+    "remark":"Helio X20 十核旗舰处理器 / 全金属一体化机身 / 4100mAh 大电量 ",
+    "roll":[
+    "./public/img/hongminote4roll1.webp",
+    "./public/img/hongminote4roll2.webp",
+    "./public/img/hongminote4roll3.webp",
+    "./public/img/hongminote4roll4.webp",
+    "./public/img/hongminote4roll5.webp",
+    "./public/img/hongminote4roll6.webp"
+    ],
+    "detailphoto":[
+    "./public/img/hongminote41.webp",
+    "./public/img/hongminote42.webp",
+    "./public/img/hongminote43.webp",
+    "./public/img/hongminote44.webp",
+    "./public/img/hongminote45.webp",
+    "./public/img/hongminote46.webp",
+    "./public/img/hongminote47.webp",
+    "./public/img/hongminote48.webp",
+    "./public/img/hongminote49.webp",
+    "./public/img/hongminote410.webp",
+    "./public/img/hongminote411.webp",
+    "./public/img/hongminote412.webp",
+    "./public/img/hongminote413.webp"
+    ]
+   }
+]

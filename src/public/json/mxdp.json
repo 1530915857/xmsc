@@ -1,0 +1,50 @@
+[
+ {
+   "id":"03",
+   "img":"./public/img/xmsh2.webp",
+   "bj":"./public/img/by.webp",
+   "name":"小米手环2",
+   "remark":"OLED显示屏，触摸操作",
+   "price":"￥149"
+ },
+ {
+   "id":"04",
+   "img":"./public/img/xiaomi5s64G.webp",
+   "bj":"./public/img/yzp.webp",
+   "name":"小米5s 64GB版",
+   "remark":"'暗夜之眼'超感光相机",
+   "price":"￥1999"
+ },
+ {
+   "id":"05",
+   "img":"./public/img/xiaomi564G.webp",
+   "bj":"./public/img/yzp.webp",
+   "name":"小米5 64GB版",
+   "remark":"十余项黑科技，很轻很快",
+   "price":"￥1799"
+ },
+ {
+   "id":"06",
+   "img":"./public/img/hongmi416G.webp",
+   "bj":"",
+   "name":"红米4 16GB版",
+   "remark":"长续航金属千元旗舰手机",
+   "price":"￥799"
+ },
+ {
+   "id":"07",
+   "img":"./public/img/xiaomiluyouqi.webp",
+   "bj":"",
+   "name":"小米路由器3",
+   "remark":"全向高增益4天线",
+   "price":"￥149"
+ },
+ {
+   "id":"08",
+   "img":"./public/img/xiaomichaxianban.webp",
+   "bj":"",
+   "name":"小米插线板",
+   "remark":"3个USB充电口，支持快充",
+   "price":"￥49"
+ }
+]
