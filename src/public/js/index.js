@@ -26,6 +26,11 @@ head.config(["$stateProvider","$urlRouterProvider",function($stateProvider,$urlR
 		templateUrl:"./html/searchlist.html",
 		controller:"searchlist"
 	})
+	.state("main.entry",{
+		url:"/entry",
+		templateUrl:"./html/entry.html",
+		controller:"entry"
+	})
 }]);
 head.controller("body",["$scope","$rootScope","$http","$location",function($scope,$rootScope,$http,$location){
 	$rootScope.page={};
@@ -171,3 +176,14 @@ head.controller("endlist",["$scope","$rootScope","$http",function($scope,$rootSc
         $scope.endlist = list;
 	});
 }]);
+head.controller("entry",["$scope","$rootScope","$http",function($scope,$rootScope,$http){
+	$rootScope.page.hashead=false;
+	$rootScope.page.hasfoot=false;
+	$rootScope.page.left=false;
+	$rootScope.page.center=false;
+	$rootScope.page.right=false;
+	$rootScope.page.back=false;
+	$rootScope.page.share=false;
+	$rootScope.page.searchlist=true;
+	$rootScope.page.title="小米账号   - 登陆";
+}])

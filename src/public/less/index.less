@@ -1,3 +1,4 @@
+@charset utf-8;
 *{
     margin: 0;
     padding: 0;
@@ -8,6 +9,7 @@ body,html{
     height: 100%;
 //  background: gainsboro;
     font-size: 100px;
+    font-family: "微软雅黑";
 }
 #head{
     width: 100%;
@@ -519,6 +521,129 @@ section{
                         color: orange;
                     }
                 }
+            }
+        }
+    }
+    #entrybox{
+        width: 100%;
+        height: 100%;
+        background: gainsboro;
+        position: relative;
+        #numberentry{
+            width: 100%;
+            height: 100%;
+            #xiaomilogo{
+                width: 100%;
+                height: 1rem;
+                text-align: center;
+                img{
+                    width: 0.5rem;
+                    
+                }
+            }
+            p{
+                font-size: 0.17rem;
+                text-align: center;
+                line-height: 8vh;
+            }
+            #accountNumberBox{
+                width: 90vw;
+                height: 0.8rem;
+                border-radius: 20px;
+                position: relative;
+                margin: auto;
+                overflow: hidden;
+                input{
+                    font-size: 0.2rem;
+                    width: 100%;
+                    height: 0.4rem;
+                    padding-left: 3vw;
+                    color: gainsboro;
+                    position: absolute;
+                }
+                #accountNumber{
+                    top: 0;
+                    outline: none;
+                    border: none;
+                }
+                #accountNumber::after{
+                    content: "";
+                    width: 100%;
+                    height: 2px;
+                    background: black;
+                    position: absolute;
+                    top: 0.4rem;
+                }
+                #pasw{
+                    top: 0.4rem;
+                    outline: none;
+                    border: none;
+                }
+            }
+            #accountNumberBox::after{
+                content: "";
+                width: 100%;
+                height: 1px;
+                background: gainsboro;
+                position: absolute;
+                top: 0.4rem;
+            }
+            #entryBtn{
+                width: 90vw;
+                height: 0.4rem;
+                background: dodgerblue;
+                margin: auto;
+                text-align: center;
+                line-height: 0.4rem;
+                margin-top: 0.5rem;
+                font-size: 0.18rem;
+                border-radius: 0.16rem;
+                color: white;
+            }
+            #otherEntrystyle{
+                width: 40vw;
+                height: auto;
+                background: gainsboro;
+                padding: 1vw;
+                text-align: center;
+                margin: auto;
+                font-size: 0.2rem;
+                position: relative;
+                top: -0.7rem;
+            }
+            #otherlogo{
+                width: 60vw;
+                height: 16vw;
+                margin: auto;
+                li{
+                    width: 16vw;
+                    height: 16vw;
+                    background:url(../img/entrylogo.png);
+                    float: left;
+                }
+            }
+            #forgetpas{
+                width: 60vw;
+                height: auto;
+                margin:5vh auto;
+                li{
+                    width: 30vw;
+                    float: left;
+                    font-size: 0.16rem;
+                    text-align: center;
+                }
+            }
+        }
+        #codeentry{
+            width: 20vw;
+            height: 20vw;
+            position: absolute;
+            right: 0;
+            top: 0;
+            img{
+                width: 20vw;
+                position: absolute;
+                top: 0;
             }
         }
     }

@@ -1,3 +1,4 @@
+@charset utf-8;
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +9,7 @@ html {
   width: 100%;
   height: 100%;
   font-size: 100px;
+  font-family: "微软雅黑";
 }
 #head {
   width: 100%;
@@ -519,6 +521,128 @@ section #searchlist li .goodslist .right .price {
   line-height: 6vh;
   font-size: 0.16rem;
   color: orange;
+}
+section #entrybox {
+  width: 100%;
+  height: 100%;
+  background: gainsboro;
+  position: relative;
+}
+section #entrybox #numberentry {
+  width: 100%;
+  height: 100%;
+}
+section #entrybox #numberentry #xiaomilogo {
+  width: 100%;
+  height: 1rem;
+  text-align: center;
+}
+section #entrybox #numberentry #xiaomilogo img {
+  width: 0.5rem;
+}
+section #entrybox #numberentry p {
+  font-size: 0.17rem;
+  text-align: center;
+  line-height: 8vh;
+}
+section #entrybox #numberentry #accountNumberBox {
+  width: 90vw;
+  height: 0.8rem;
+  border-radius: 20px;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+section #entrybox #numberentry #accountNumberBox input {
+  font-size: 0.2rem;
+  width: 100%;
+  height: 0.4rem;
+  padding-left: 3vw;
+  color: gainsboro;
+  position: absolute;
+}
+section #entrybox #numberentry #accountNumberBox #accountNumber {
+  top: 0;
+  outline: none;
+  border: none;
+}
+section #entrybox #numberentry #accountNumberBox #accountNumber::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: black;
+  position: absolute;
+  top: 0.4rem;
+}
+section #entrybox #numberentry #accountNumberBox #pasw {
+  top: 0.4rem;
+  outline: none;
+  border: none;
+}
+section #entrybox #numberentry #accountNumberBox::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: gainsboro;
+  position: absolute;
+  top: 0.4rem;
+}
+section #entrybox #numberentry #entryBtn {
+  width: 90vw;
+  height: 0.4rem;
+  background: dodgerblue;
+  margin: auto;
+  text-align: center;
+  line-height: 0.4rem;
+  margin-top: 0.5rem;
+  font-size: 0.18rem;
+  border-radius: 0.16rem;
+  color: white;
+}
+section #entrybox #numberentry #otherEntrystyle {
+  width: 40vw;
+  height: auto;
+  background: gainsboro;
+  padding: 1vw;
+  text-align: center;
+  margin: auto;
+  font-size: 0.2rem;
+  position: relative;
+  top: -0.7rem;
+}
+section #entrybox #numberentry #otherlogo {
+  width: 60vw;
+  height: 16vw;
+  margin: auto;
+}
+section #entrybox #numberentry #otherlogo li {
+  width: 16vw;
+  height: 16vw;
+  background: url(../img/entrylogo.png);
+  float: left;
+}
+section #entrybox #numberentry #forgetpas {
+  width: 60vw;
+  height: auto;
+  margin: 5vh auto;
+}
+section #entrybox #numberentry #forgetpas li {
+  width: 30vw;
+  float: left;
+  font-size: 0.16rem;
+  text-align: center;
+}
+section #entrybox #codeentry {
+  width: 20vw;
+  height: 20vw;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+section #entrybox #codeentry img {
+  width: 20vw;
+  position: absolute;
+  top: 0;
 }
 #foot {
   width: 100%;

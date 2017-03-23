@@ -4,7 +4,7 @@
 	<span id="hcenter" ng-if="page.center">
 		<input type="text" placeholder="搜索商品名称" ng-focus="page.goPage('search')"/>
 	</span>
-	<span id="hright" ng-if="page.right">登录</span>
+	<span id="hright" ng-if="page.right" ng-click="page.goPage('entry')">登录</span>
 	<span id="share" class="iconfont icon-share6" ng-if="page.share"></span>
 	<ul id="searhead" ng-if="page.search">
 		<li id="homepage" ng-click="page.goPage('mainlist')" class="iconfont icon-zhuye"></li>
