@@ -26,10 +26,15 @@ head.config(["$stateProvider","$urlRouterProvider",function($stateProvider,$urlR
 		templateUrl:"./html/searchlist.html",
 		controller:"searchlist"
 	})
-	.state("main.entry",{
+	.state("main.entry",{//登录
 		url:"/entry",
 		templateUrl:"./html/entry.html",
 		controller:"entry"
+	})
+	.state("main.register",{
+		url:"/register",
+		templateUrl:"./html/register.html",
+		controller:"register"
 	})
 }]);
 head.controller("body",["$scope","$rootScope","$http","$location",function($scope,$rootScope,$http,$location){
@@ -185,5 +190,26 @@ head.controller("entry",["$scope","$rootScope","$http",function($scope,$rootScop
 	$rootScope.page.back=false;
 	$rootScope.page.share=false;
 	$rootScope.page.searchlist=true;
-	$rootScope.page.title="小米账号   - 登陆";
-}])
+	$rootScope.page.title="小米账号   - 登录";
+	$rootScope.page.type="password";
+	$rootScope.page.showOrhidden="icon-kejian";
+	var i=0;
+	$rootScope.page.showpass=function()
+	{
+		i++;
+		if (i%2==0) {
+			$rootScope.page.type="password";
+			$rootScope.page.showOrhidden="icon-unvisible";
+		} else{
+			$rootScope.page.type="text";
+			$rootScope.page.showOrhidden="icon-kejian";
+		}
+	}
+	$rootScope.page.login=function()
+	{
+		alert("尚未注册");
+	}
+}]);
+head.controller("register",["$scope","$rootScope","$http",function($scope,$rootScope,$http){
+	$rootScope.page.title="小米账号   - 注册";
+}]);
