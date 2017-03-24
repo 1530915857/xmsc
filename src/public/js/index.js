@@ -212,4 +212,12 @@ head.controller("entry",["$scope","$rootScope","$http",function($scope,$rootScop
 }]);
 head.controller("register",["$scope","$rootScope","$http",function($scope,$rootScope,$http){
 	$rootScope.page.title="小米账号   - 注册";
+	$rootScope.page.hashead=false;
+	$rootScope.page.hasfoot=false;
+	$rootScope.page.left=false;
+	$rootScope.page.center=false;
+	$rootScope.page.right=false;
+	$rootScope.page.back=false;
+	$rootScope.page.share=false;
+	$rootScope.page.searchlist=false;
 }]);

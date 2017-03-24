@@ -650,6 +650,100 @@ section #entrybox #codeentry img {
   position: absolute;
   top: 0;
 }
+section #registerbox {
+  width: 100%;
+  height: 100%;
+  background: ghostwhite;
+  position: relative;
+}
+section #registerbox #registerTitle {
+  font-size: 0.2rem;
+  line-height: 13vh;
+  text-align: center;
+  color: grey;
+}
+section #registerbox input {
+  padding-left: 2vw;
+  box-sizing: border-box;
+}
+section #registerbox .telPrefix {
+  width: 90vw;
+  height: 0.4rem;
+  margin-left: 5vw;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid gainsboro;
+  position: relative;
+}
+section #registerbox .prefix {
+  top: -0.8rem;
+}
+section #registerbox .telnumber {
+  top: -1.6rem;
+}
+section #registerbox #numberErroy {
+  width: 90vw;
+  height: 0.3rem;
+  position: absolute;
+  line-height: 0.3rem;
+  color: orangered;
+  top: 2.4rem;
+  left: 5vw;
+}
+section #registerbox #YZcode {
+  width: 50vw;
+  height: 0.4rem;
+  margin-left: 5vw;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid gainsboro;
+  position: absolute;
+  top: 1.95rem;
+}
+section #registerbox #Verification {
+  width: 35vw;
+  height: 0.4rem;
+  background: white;
+  position: absolute;
+  top: 1.95rem;
+  left: 57vw;
+}
+section #registerbox #registerBtn {
+  width: 90vw;
+  height: 0.4rem;
+  background: deepskyblue;
+  position: absolute;
+  top: 2.7rem;
+  left: 5vw;
+  border-radius: 20px;
+  font-size: 0.18rem;
+  text-align: center;
+  line-height: 0.4rem;
+  color: white;
+}
+section #registerbox #registrationPolicy {
+  width: 90vw;
+  position: absolute;
+  top: 3.3rem;
+  left: 5vw;
+  line-height: 3vh;
+  font-size: 0.18rem;
+  color: grey;
+}
+section #registerbox #registrationPolicy mark {
+  color: black;
+}
+section #registerbox #entrylink {
+  width: 90vw;
+  position: absolute;
+  top: 4.5rem;
+  left: 5vw;
+  font-size: 0.2rem;
+  line-height: 4vh;
+}
+section #registerbox #entrylink a {
+  color: deepskyblue;
+}
 #foot {
   width: 100%;
   height: 8vh;
