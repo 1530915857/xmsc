@@ -192,17 +192,18 @@ head.controller("entry",["$scope","$rootScope","$http",function($scope,$rootScop
 	$rootScope.page.searchlist=true;
 	$rootScope.page.title="小米账号   - 登录";
 	$rootScope.page.type="password";
-	$rootScope.page.showOrhidden="icon-kejian";
-	var i=0;
+	$rootScope.page.showOrhidden="icon-unvisible";
+	var i=false;
 	$rootScope.page.showpass=function()
 	{
-		i++;
-		if (i%2==0) {
+		if (i) {
 			$rootScope.page.type="password";
 			$rootScope.page.showOrhidden="icon-unvisible";
+			i=false;
 		} else{
 			$rootScope.page.type="text";
 			$rootScope.page.showOrhidden="icon-kejian";
+			i=true;
 		}
 	}
 	$rootScope.page.login=function()

@@ -1,4 +1,4 @@
-@charset utf-8;
+@charset "utf-8";
 * {
   margin: 0;
   padding: 0;
@@ -617,13 +617,13 @@ section #entrybox #numberentry #otherEntrystyle {
   top: -0.7rem;
 }
 section #entrybox #numberentry #otherlogo {
-  width: 60vw;
-  height: 16vw;
+  width: 3rem;
+  height: 0.6rem;
   margin: auto;
 }
 section #entrybox #numberentry #otherlogo li {
-  width: 16vw;
-  height: 16vw;
+  width: 0.6rem;
+  height: 0.6rem;
   background: url(../img/entrylogo.png);
   float: left;
 }
